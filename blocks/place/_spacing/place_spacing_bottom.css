@@ -1,0 +1,19 @@
+.place_spacing_bottom {
+  margin-bottom: 80px;
+}
+
+.place_spacing_bottom:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .place_spacing_bottom {
+    margin-bottom: 73px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place_spacing_bottom {
+    margin-bottom: 50px;
+  }
+}

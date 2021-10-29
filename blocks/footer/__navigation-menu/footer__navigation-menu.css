@@ -1,0 +1,12 @@
+.footer__navigation-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__navigation-menu {
+    min-height: 310px;
+    flex-direction: column;
+    align-content: space-between;
+  }
+}

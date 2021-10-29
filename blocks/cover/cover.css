@@ -1,0 +1,24 @@
+.cover {
+  width: 92.5%;
+  background-image: url(../../images/cover-trains.jpg);
+  display: grid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.cover::before {
+  content: "";
+  width: 100%;
+  padding-top: 62.5%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+@media screen and (max-width: 1280px) {
+  .cover {
+    width: 100%;
+  }
+}

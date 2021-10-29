@@ -6,37 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путешествия по России</title>
-  <link rel="stylesheet" href="./vendor/normalize.css"> <!-- Оформить по БЭМ; импорт в index.css-->
-  <link rel="stylesheet" href="./style.css"><!-- Оформить по БЭМ; подключить index.css-->
-  <link rel="stylesheet" href="./vendor/fonts/fonts.css"> <!--Оформить по БЭМ-->
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body>
   <div class="page">
-    <header class="header">
+    <header class="header page__header">
       <div class="header__logo"></div>
       <ul class="header__lang-links">
-        <li><a class="header__lang-link" href="#">Ru</a></li> 
-        <li><a class="header__lang-link header__lang-link_underline_no" href="#">En</a></li>
+        <li><a class="header__lang-link header__lang-link_active" href="#">Ru</a></li>
+        <li><a class="header__lang-link" href="#">En</a></li>
       </ul>
     </header>
 
-    <main class="content">
-      <section class="lead">
+    <main class="content page__content">
+      <section class="lead content__lead">
         <h1 class="lead__title">Путешествия по России</h1>
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
         <img class="lead__image" src="./images/lead-polka.jpg" alt="картинка блок lead">
         <p class="lead__caption">ваша полка — верхняя</p>
       </section>
 
-      <section class="intro">
-        <h2 class="intro__title">Чего мы там не видели?</h2>
+      <section class="intro content__intro">
+        <h2 class="intro__title">Чего мы там не&nbsp;видели?</h2>
         <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать,
           но только 36% планируют провести отпуск в родной стране.
           Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга,
           густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на
-          счету,
-          загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама,
+          счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама,
           которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране.
           Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
         </p>
@@ -49,7 +46,7 @@
         </ul>
       </section>
 
-      <section class="photo-grid">
+      <section class="photo-grid content__photo-grid">
         <img src="./images/photo-grid-train.jpg" alt="картинка галереи photo-grid" class="photo-grid__item">
         <img src="./images/photo-grid-atharva-tulsi.jpg" alt="картинка галереи photo-grid" class="photo-grid__item">
         <img src="./images/photo-grid-tuman.jpg" alt="картинка галереи photo-grid" class="photo-grid__item">
@@ -64,11 +61,11 @@
         <img src="./images/photo-grid-ergaki.jpg" alt="картинка галереи photo-grid" class="photo-grid__item">
       </section>
 
-      <section class="places">
-        <article class="place place_spacing_bottom"><!--make Grid-->
+      <section class="places content__places">
+        <article class="place place_spacing_bottom">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
-            <p class="place__website-url-heading">URL</p> <!-- font #AAA-->
+            <p class="place__website-url-heading">URL</p>
             <a href="http://park-kosa.ru" target="_blank" class="place__website-link">park-kosa.ru</a>
           </div>
           <img src="./images/place-kosa.jpg" alt="Куршская коса" class="place__image">
@@ -82,16 +79,16 @@
               и запах стального, прохладного моря.</p>
           </div>
         </article>
-        <article class="place place_spacing_bottom"><!--make Grid-->
+        <article class="place place_spacing_bottom">
           <h2 class="place__title">Кольский</h2>
           <div class="place__website">
-            <p class="place__website-url-heading">URL</p><!-- font #AAA-->
+            <p class="place__website-url-heading">URL</p>
             <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank" class="place__website-link">National Geographic</a>
           </div>
           <img src="./images/place-kolsky.jpg" alt="Кольский" class="place__image">
           <div class="place__paragraph">
-            <p class="place__paragraph-text">Почти весь полуостров находится за Полярным кругом. 
-              Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, 
+            <p class="place__paragraph-text">Почти весь полуостров находится за Полярным кругом.
+              Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан,
               прикидывающийся Баренцевым морем.</p>
             <p class="place__paragraph-text">Возможно, вы смотрели Звягинцева и даже слышали историю арктического
               фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках
@@ -100,10 +97,10 @@
               в Мурманск.</p>
           </div>
         </article>
-        <article class="place place_spacing_bottom"><!--make Grid-->
+        <article class="place place_spacing_bottom">
           <h2 class="place__title">Алтай</h2>
           <div class="place__website">
-            <p class="place__website-url-heading">URL</p><!-- font #AAA-->
+            <p class="place__website-url-heading">URL</p>
             <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" target="_blank" class="place__website-link">Facebook</a>
           </div>
           <img src="./images/place-altai.jpg" alt="Алтай" class="place__image">
@@ -117,10 +114,10 @@
               равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
           </div>
         </article>
-        <article class="place place_spacing_bottom"><!--make Grid-->
+        <article class="place place_spacing_bottom">
           <h2 class="place__title">Зимний Байкал</h2>
           <div class="place__website">
-            <p class="place__website-url-heading">URL</p><!-- font #AAA-->
+            <p class="place__website-url-heading">URL</p>
             <a href="https://vk.com/baikalmile" target="_blank" class="place__website-link">https://vk.com/baikalmile</a>
           </div>
           <img src="./images/place-winter-baikal.jpg" alt="Зимний байкал" class="place__image">
@@ -134,10 +131,10 @@
               «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
           </div>
         </article>
-        <article class="place place_spacing_bottom"><!--make Grid-->
+        <article class="place place_spacing_bottom">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
-            <p class="place__website-url-heading">URL</p><!-- font #AAA-->
+            <p class="place__website-url-heading">URL</p>
             <a href="http://vodlozero.ru" target="_blank" class="place__website-link">http://vodlozero.ru/</a>
           </div>
           <img src="./images/place-karelia.jpg" alt="Карелия" class="place__image">
@@ -152,17 +149,18 @@
         </article>
       </section>
 
-      <section class="cover cover_align_middle">
+      <section class="cover content__cover">
         <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" class="cover__link">
-          <h2 class="cover__title">До Байкала «на собаках»</h2>
-          <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>
+          <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
+          <p class="cover__subtitle">По мотивам учебной темы о&nbsp;Транссибе — путешествие от&nbsp;столицы до Байкала
+            на электричках.</p>
         </a>
       </section>
     </main>
 
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <ul class="footer__navigation-links"><!-- убрать кружочки-->
+    <footer class="footer page__footer">
+      <nav class="footer__navigation-menu">
+        <ul class="footer__navigation-links">
           <li><a class="footer__navigation-link" target="_blank" href="https://yandex.ru/maps">Карты</a></li>
           <li><a class="footer__navigation-link" target="_blank" href="https://yandex.ru/pogoda">Погода</a></li>
           <li><a class="footer__navigation-link" target="_blank" href="https://rasp.yandex.ru">Расписание</a></li>
